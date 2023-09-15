@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: myapp-service
+  name: gitops-tutorial-service
 spec:
   selector:
-    app: myapp
+    app: gitops-tutorial
 
   type: LoadBalancer
   ports:
