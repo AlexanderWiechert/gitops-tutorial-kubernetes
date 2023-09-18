@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: gitops-tutorial
-        image: elastic2ls/gitops-tutorial:build-20
+        image: elastic2ls/gitops-tutorial:build-22
         ports:
         - containerPort: 80
