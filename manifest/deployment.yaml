@@ -15,5 +15,15 @@ spec:
       containers:
       - name: gitops-tutorial
         image: elastic2ls/gitops-tutorial:build-24
+        imagePullPolicy:  Always
         ports:
         - containerPort: 80
+        securityContext:
+          allowPrivilegeEscalation: false
+          runAsNonRoot: true
+          readOnlyRootFilesystem: true
+
+        resources:
+          limits:
+            cpu: 100m
+            memory: 100M
