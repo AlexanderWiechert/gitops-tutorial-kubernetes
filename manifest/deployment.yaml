@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: gitops-tutorial
-        image: elastic2ls/gitops-tutorial:build-53
+        image: elastic2ls/gitops-tutorial:build-54
         imagePullPolicy:  Always
         ports:
         - containerPort: 80
